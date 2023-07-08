@@ -263,7 +263,8 @@ function showProductDetail(item) {
       },
       body: JSON.stringify(data)
     })
-    alert('Thêm Giỏ Hàng Thành công')
+    alert('Thêm Giỏ Hàng Thành công');
+    window.location.href = './features.html';
   })
 
 }

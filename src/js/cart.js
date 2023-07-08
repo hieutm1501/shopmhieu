@@ -65,6 +65,7 @@ function displayProducts(cart) {
                     fetch(`https://64a7eb38dca581464b84ff57.mockapi.io/cart/${id}`, {
                         method: 'DELETE',
                     })
+                    alert('Xoá sản phẩm thành công !')
                         .then(response => response.json())
                         .then(data => console.log(data))
                         .catch(error => console.error(error));
