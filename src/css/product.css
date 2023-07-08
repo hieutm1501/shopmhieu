@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#appp {
+    width: 100%;
+    height: 2430px;
+    background-color: #333333a4;
+    /* margin-top: -100px; */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 4fr;
+    background-color: #fff;
+    padding: 50px 20px;
+    column-gap: 20px;
+    width: 1050px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 5px gray;
+}
+
+.close i {
+    position: absolute;
+    color: #333333;
+    top: -30px;
+    z-index: 1;
+    right: 0px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.close i:hover {
+    color: #717fe0;
+    transition: .6s;
+}
+
+.grid-left>img {
+    margin: 0px 0px 10px 0px;
+}
+
+.grid-mid {
+    position: relative;
+}
+
+.icon-next-pre>i:nth-child(1) {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    transition: .6s;
+}
+
+.icon-next-pre i:nth-child(1):hover {
+    background-color: #717fe0;
+    color: #fff;
+    transition: .6s;
+}
+
+.next-pre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-next-pre .next-pre i:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background-color: #666666;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.icon-next-pre .next-pre i:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    background-color: #666666;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.icon-next-pre .next-pre i:hover {
+    background-color: #717fe0;
+    transition: .6s;
+}
+
+.grid-right {
+    position: relative;
+}
+
+.grid-right>p:nth-child(1) {
+    color: #666666;
+    flex-basis: 50%;
+    font-size: 30px;
+    line-height: 22.5px;
+    padding: 0px 0px 30px;
+}
+
+.grid-right h3 {
+    font-size: 20px;
+    color: #333333;
+    line-height: 25px;
+    display: inline;
+}
+
+.grid-right>p:nth-child(3) {
+    color: #666666;
+    font-size: 18px;
+    padding: 30px 0px;
+}
+
+.grid-right .option-product table td {
+    padding: 0px 40px 20px;
+    color: #666666;
+}
+
+.grid-right .option-product table td select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777777;
+    border-radius: 8px;
+}
+
+.grid-right .option-product table tr td select>option {
+    color: #666666;
+    padding: 10px;
+    outline: none;
+}
+
+.grid-right .option-product table tr td button {
+    padding: 10px 15px;
+    color: #333333;
+    background-color: #77777748;
+    border: 0.2px solid #666666;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 -5px;
+    transition: .6s;
+    border: none;
+}
+
+.grid-right .option-product table tr td button:hover {
+    background-color: #717fe0;
+    border: #717fe0;
+    transition: .6s;
+}
+
+.grid-right .option-product table tr td input {
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    color: #666666;
+    background-color: #77777709;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.grid-right .option-product table tr td #a {
+    text-decoration: none;
+    background-color: #717fe0;
+    font-weight: 550;
+    color: #fff;
+    padding: 15px;
+    border-radius: 100px;
+    transition: .6s;
+    cursor: pointer;
+    width: 100%;
+}
+
+.grid-right .option-product table tr td #a:hover {
+    background-color: #333333;
+    transition: .6s;
+}
+
+.icon-product {
+    width: 108%;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.icon-product i {
+    color: #777777ad;
+    margin: 0px 10px;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.icon-product i:hover {
+    color: #717fe0;
+    transition: .6s;
+}

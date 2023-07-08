@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/product.css">
+  <link rel="stylesheet" href="src/css/shop.css" />
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon"
+    href="https://scontent.fhan2-1.fna.fbcdn.net/v/t39.30808-6/295374195_781580993040406_229230968445196371_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=k_Xu60nDFkwAX8LIGg9&tn=eWdFGZdlTg1QYgfP&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-uoE0xxAPsPu7H0wV1e6MFTCbtb0zrqnelN6fuvutywQ&oe=63303C90">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://fonts.adobe.com/fonts/poppins#details-section+poppins-thin"> -->
+  <link rel="stylesheet" href="https://www.dafontfree.net/playfair-display-bold/f59120.html">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Shop</title>
+</head>
+
+<body>
+  <!-- Dựng base -->
+
+  <div id="app">
+
+
+
+
+
+    <div id="header">
+
+      <div class="header-top">
+        <div class="sub-header-top">
+          <div class="left-title">
+            <h4>Website designed by Coza</h4>
+          </div>
+          <div class="list-header">
+            <ul>
+              <li><a href=""> Help & FAQs</a></li>
+              <li><a href=""> My Account</a></li>
+              <li><a href=""> EN</a></li>
+              <li><a href=""> USD</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="nav">
+
+        <div class="photo-logo">
+          <a href="index.html"><img src="src/img/logo.webp" style="cursor: pointer;" alt="" /></a>
+        </div>
+        <div class="list-menu">
+          <ul>
+            <li>
+              <a href="index.html" id="home"> Home
+              </a>
+            </li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="list-icon" id="list-icon">
+          <div class="icons search" id="iconSearch">
+
+            <input type="text" id="input_search" placeholder="New Product..?">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="icons cart">
+            <a href="./features.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+          <div class="icons heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="icons heart">
+            <a href="./signin.html"><button>Login</button></a>
+          </div>
+          <div class="toggle">
+            <i class='bx bx-sun'></i>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div id="main">
+
+
+
+      <div class="product">
+
+        <div class="text-product">
+          <div class="menu-filter-product">
+            <div class="menu-product">
+              <ul>
+                <li><a href="">All Products</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Bag</a></li>
+                <li><a href="">Shoes</a> </li>
+                <li><a href="">Watches</a></li>
+              </ul>
+            </div>
+            <div class="filter-product">
+              <div id="sort-buttons">
+                <button id="sort-az">A-Z</button>
+                <button id="sort-za">Z-A</button>
+              </div>
+
+
+              <div class="icons search" id="iconSearch">
+
+                <input type="text" id="search-input" placeholder="Search Product..?">
+                <i class="fa-solid fa-magnifying-glass" id="search-button"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="style"></div>
+
+        <!-- kết nối back -->
+
+        <div id="modal-overlay" class="modal-overlay" style="display:none">
+          <div id="modal-content" class="modal-content">
+            <span class="close">&times;</span>
+            <div id="product-detail"></div>
+          </div>
+        </div>
+
+        <div id="product-list" class="image-product">
+          <!-- hiển thị dữ liệu api ở đây -->
+        </div>
+
+        <div class="btn-product" data-aos="zoom-in-right">
+          <a href="">LOAD MORE</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="footer">
+      <div class="text-footer">
+        <div class="cate">
+          <h3>CATEGORIES</h3>
+          <p><a href="">Women</a></p>
+          <p><a href="">Men</a></p>
+          <p><a href="">Shoes</a></p>
+          <p><a href="">Watches</a></p>
+        </div>
+        <div class="help">
+          <h3>HELP</h3>
+          <p><a href="">Track Order</a></p>
+          <p><a href="">Returns</a></p>
+          <p><a href="">Shipping</a></p>
+          <p><a href="">FAQs</a></p>
+        </div>
+        <div class="touch">
+          <h3>GET IN TOUCH</h3>
+          <p>Any questions? Let us know in store at 8th floor,An Ninh,Binh Luc, Ha Nam, NY 10018 or call us on
+            (+84) 968 68 68 68</p>
+          <p>
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+          </p>
+        </div>
+        <div class="mail">
+          <h3>NEWSLETTER</h3>
+
+          <div class="input-mail">
+
+            <input type="email" placeholder="email@example.com">
+            <span></span>
+          </div>
+
+          <p><a href="">SUBSCRIBE</a></p>
+
+        </div>
+      </div>
+
+
+
+      <div class="local-footer">
+        <div class="image-logo-footer">
+          <img src="src/img/ft1.webp" alt="">
+          <img src="src/img/ft2.webp" alt="">
+          <img src="src/img/ft3.webp" alt="">
+          <img src="src/img/ft4.webp" alt="">
+          <img src="src/img/ft5.webp" alt="">
+        </div>
+        <div class="text-local-footer">
+          <p>Copyright ©2022 All rights reserved | This template is made with <i class='bx bx-heart'></i> by <span
+              style="color: #007bff;cursor: pointer;">mhieu</span></p>
+        </div>
+      </div>
+
+      <div class="back-footer">
+        <a href="#"><i class='bx bx-arrow-to-top bx-fade-up'></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="./src/js/product.js"></script>
+  <script src="./src/js/listproduct.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
