@@ -162,10 +162,10 @@ function showProductDetail(item) {
               <td>
                 <select id="size">
                   <option value="0">Choose an option</option>
-                  <option value="1">Size S</option>
-                  <option value="2">Size M</option>
-                  <option value="3">Size L</option>
-                  <option value="4">Size XL</option>
+                  <option value="1">Size 39</option>
+                  <option value="2">Size 40</option>
+                  <option value="3">Size 41</option>
+                  <option value="4">Size 42</option>
                 </select>
               </td>
             </tr>
